@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Welcome to Rooster Grin</title>
+    <script>
+
+        // CAROUSEL SCRIPTS
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        // END CAROUSEL SCRIPTS
+        }
+    </script>
+</head>
+
+<body>
+    <Div id="herobox">
+        <div id="herocontent">
+            <!-- <div id="whitelogo">
+                <img id="logowhite" src="../static/assets/logo-white.svg" />
+            </div> -->
+            <div id="herotextandbutton">
+                <img id="logowhite" src="../static/assets/logo-white.svg" />
+                <span id="bubbletext">WELCOME TO</span>
+                <span id="Herosubtext">Rooster Grin</span>
+                <button id="herobutton">BUTTON BUTTON</button>
+            </div>
+        </div>
+    </Div>
+    <div id="row1">
+        <div class="col1">
+            <div class="innercol1">
+                <div class="rowtext">
+                    <span class="rowheadertext">LOREM IPSUM</span>
+                    <p>Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio
+                        vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula, lacus
+                        est vehicula donec. Quam in ac quam. Duis et, non arcu imperdiet sem tellus suspendisse.
+                        Condimentum non aliquet sed, quisque risus vitae semper duis feugiat .</p>
+                    <a href="#" class="morelink"> > Lorem Ipsum</a>
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div id="photoblock">
+                <div class="innercol2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="row2">
+        <div class="col1">
+            <div class="innercol1">
+                <div class="rowtext">
+                    <span class="rowheadertext">LOREM IPSUM</span>
+                    <button class="rowbutton">BUTTON BUTTON</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="innercol2"></div>
+        </div>
+    </div>
+    <div id="row3">
+        <div class="col1">
+            <div class="innercol1">
+                <div class="rowtext">
+                    <span id="rowheadertext_black">LOREM IPSUM DOLOR SIT AMET</span>
+                    <p>Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio
+                        vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula.</p>
+                    <a href="#" class="morelink"> > Lorem Ipsum</a>
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div id="iconblock">
+                <div class="innercol2">
+                    <div id="iconcolumns">
+                        <div id="iconstop">
+                            <div id="iconwithtext" class="bounce_button">
+                                <div class="circleborder">
+                                    <img src="../static/assets/home-expertise.svg">
+                                </div>
+                                <span class="icontext">LOREM</span>
+                            </div>
+                            <div id="iconwithtext" class="bounce_button">
+                                <div class="circleborder">
+                                    <img src="../static/assets/home-hygiene.svg">
+                                </div>
+                                <span class="icontext">LOREM IPSUM</span>
+                            </div>
+                        </div>
+                        <div id="iconsbottom">
+                            <div id="iconwithtext" class="bounce_button">
+                                <div class="circleborder">
+                                    <img src="../static/assets/home-lab.svg">
+                                </div>
+                                <span class="icontext">LOREM IPSUM</span>
+                            </div>
+                            <div id="iconwithtext" class="bounce_button">
+                                <div class="circleborder">
+                                    <img src="../static/assets/home-retention.svg">
+                                </div>
+                                <span class="icontext">LOREM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="row4">
+        <div class="col1">
+            <div class="innercol1"></div>
+        </div>
+        <div class="col2">
+            <div class="innercol2">
+                <div class="rowtext">
+                    <span class="rowheadertext">LOREM IPSUM DOLOR SIT AMET</span>
+                    <p>Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio
+                        vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula.</p>
+                    <button class="rowbutton">BUTTON BUTTON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="row5">
+        <div class="col1">
+            <div class="innercol1">
+                <div class="rowtext">
+                    <span id="rowheadertext_black">LOREM IPSUM DOLOR SIT AMET</span>
+                    <span id="stars">★★★★★</span>
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="innercol2">
+                <div id="fullcarouselbox">
+                    <a class="prev" onclick="plusSlides(-1)">◄</a>
+                    <div id="carousel">
+
+                        <div class="mySlides fade">
+                            <span class="carouselpersontext">John Doe 08/08/2019</span>
+                            <p>Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque
+                                in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl
+                                ligula. Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est
+                                sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra
+                                eros dictum nisl ligula.Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl
+                                magna est sociis, neque in.</p>
+                        </div>
+                        <div class="mySlides fade" style="display:none">
+                            <span class="carouselpersontext">Jane Doe 03/02/2021</span>
+                            <p>Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque
+                                in odio vel, sit lobortis erat. </p>
+                        </div>
+                        <div class="mySlides fade" style="display:none">
+                            <span class="carouselpersontext">Meghan Schaefer 02/10/2023</span>
+                            <p>I really had a fun time doing this mock-up, hope I can move forward to the next steps!
+                            </p>
+                        </div>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <a class="next" onclick="plusSlides(1)">►</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <span>Follow Us</span>
+        <div id="footerlogos">
+            <img src="../static/assets/instagram.svg">
+            <img src="../static/assets/facebook.svg">
+        </div>
+    </div>
+
+</body>
+
+</html>
